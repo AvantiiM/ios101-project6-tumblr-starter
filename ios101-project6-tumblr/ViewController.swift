@@ -15,10 +15,40 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let titleLabel = UILabel()
+        titleLabel.text = "Tumblr Posts"
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.systemFont(ofSize: 36, weight: .bold)
+        titleLabel.textColor = UIColor.blue
+        
+        navigationItem.titleView = titleLabel
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         tableView.dataSource = self
         fetchPosts()
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow else { return }
+        
+        let selectedPost = posts[selectedIndexPath.row]
+        
+        guard let detailViewController = segue.destination as? DetailViewController else { return }
+        
+        detailViewController.post = selectedPost
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: selectedIndexPath, animated: true)
+        }
+    }
+    
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
