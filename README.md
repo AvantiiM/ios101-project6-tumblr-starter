@@ -1,19 +1,19 @@
-# Project 6 - *Name of App Here*
+# Project 6 - *Tumblr Posts*
 
-Submitted by: **Your Name Here**
+Submitted by: **Avanti Manjunath**
 
-**Name of your app** is an app that ... [TODO] 
+**Tumblr** is an app that ... [TODO] 
 
-Time spent: **X** hours spent in total
+Time spent: **1.5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] Setup navigation to the Detail Screen
-- [ ] Created the Detail View UI
-- [ ] Add the ability to pass data to the Detail View Controller
-- [ ] Made personal finishing touches to the UI
+- [x] Setup navigation to the Detail Screen
+- [x] Created the Detail View UI
+- [x] Add the ability to pass data to the Detail View Controller
+- [x] Made personal finishing touches to the UI
 
 
 The following **additional** features are implemented:
@@ -22,9 +22,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
-
-[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
+<img src='https://github.com/AvantiiM/ios101-project6-tumblr-starter/blob/main/Tumblr_6.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
@@ -32,7 +30,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Avanti Manjunath]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
